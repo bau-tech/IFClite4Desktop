@@ -1,0 +1,1 @@
+var e=class{blob;constructor(e){this.blob=e}get size(){return this.blob.size}async read(e,t,n){n?.throwIfAborted();let r=Math.max(0,e),i=Math.min(t,this.blob.size);if(i<=r)return/* @__PURE__ */ new Uint8Array;let a=await this.blob.slice(r,i).arrayBuffer();return new Uint8Array(a)}};export{e as t};

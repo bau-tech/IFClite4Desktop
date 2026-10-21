@@ -1,0 +1,93 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: ryo33/setup-msbuild@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build desktop app
+        run: npm run app:build
+        env:
+          IFCLITE_SRC: ${{ github.workspace }}\..\..\ifc-lite-src
+
+      - name: Upload Windows artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: |
+            src-tauri/target/release/bundle/nsis/*
+            src-tauri/target/release/bundle/msi/*
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libssl-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build desktop app
+        run: npm run app:build
+        env:
+          IFCLITE_SRC: ${{ github.workspace }}/../../ifc-lite-src
+
+      - name: Upload Linux artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-build
+          path: src-tauri/target/release/bundle/appimage/*
+
+  create-release:
+    needs: [build-windows, build-linux]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Windows build
+        uses: actions/download-artifact@v4
+        with:
+          name: windows-build
+          path: ./artifacts/windows
+
+      - name: Download Linux build
+        uses: actions/download-artifact@v4
+        with:
+          name: linux-build
+          path: ./artifacts/linux
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            artifacts/windows/**/*
+            artifacts/linux/**/*
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

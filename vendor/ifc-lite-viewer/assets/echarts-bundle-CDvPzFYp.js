@@ -1,0 +1,1 @@
+import{a as e,c as t,d as n,f as r,l as i,o as a,r as o,s,t as c,u as l}from"./echarts-B70vsWCy.js";n([l,i,t,a,s,e,o,c]);function u(e){return r(e,void 0,{renderer:`canvas`})}export{u as createChart};

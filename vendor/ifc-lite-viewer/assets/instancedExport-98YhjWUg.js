@@ -1,0 +1,1 @@
+import{__tla as __tla_0}from"./instancedExport-B3RtRx9O.js";export{n as withInstancedMeshes}from"./instancedExport-B3RtRx9O.js";Promise.all([(()=>{try{return __tla_0}catch{}})()]).then(async()=>{});

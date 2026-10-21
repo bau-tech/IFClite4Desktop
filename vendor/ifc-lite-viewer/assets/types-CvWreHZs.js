@@ -1,0 +1,1 @@
+var e=class extends Error{code;constructor(e,t){super(t),this.code=e,this.name=e===`cancelled`?`AbortError`:`PdfAppearanceError`}},t=Object.freeze({maxBytes:67108864,maxPages:2e3,maxPixels:16777216,maxDimension:8192,timeoutMs:6e4});export{e as n,t};

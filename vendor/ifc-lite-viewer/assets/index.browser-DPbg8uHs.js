@@ -1,0 +1,1 @@
+import{__tla as __tla_0}from"./dist-es-DZ-4c0V7.js";export{t as EventStreamSerde,r as eventStreamSerdeProvider}from"./index.browser-ByUCT8up.js";Promise.all([(()=>{try{return __tla_0}catch{}})()]).then(async()=>{});

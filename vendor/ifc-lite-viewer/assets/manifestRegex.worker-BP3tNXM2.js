@@ -1,0 +1,1 @@
+self.onmessage=e=>{let t=e.data;if(t)try{let e=new RegExp(t.pattern).test(t.text);self.postMessage({id:t.id,matched:e})}catch(e){self.postMessage({id:t.id,error:e instanceof Error?e.message:String(e),invalidPattern:e instanceof SyntaxError})}};

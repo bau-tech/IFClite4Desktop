@@ -1,0 +1,1 @@
+var e=10485760,t=157286400,n=419430400,r=268435456;function i(e){return{fileSizeMB:e}}export{i as a,r as i,n,e as r,t};

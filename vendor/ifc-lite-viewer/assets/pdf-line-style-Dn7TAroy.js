@@ -1,0 +1,1 @@
+var e={cut:.5,hidden:.18,silhouette:.35,crease:.18,boundary:.25,annotation:.13,projection:.25},t=.25,n=[1,.6];function r(r,i){let a=e[r]??t,o=r===`hidden`||i===`hidden`;return{lineWidthMm:i===`hidden`?a*.7:a,dash:o?[...n]:[]}}export{r as t};

@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-C0FnF6B9.js";import{o as t}from"./grid-layout-VQ3UNSzC.js";var n=e(t(),1);function r({busy:e,setOpen:t,onOpen:r}){return(0,n.useCallback)(n=>{(n||!e)&&(n&&r?.(),t(n))},[e,t,r])}export{r as t};

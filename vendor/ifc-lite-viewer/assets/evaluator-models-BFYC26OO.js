@@ -1,0 +1,1 @@
+function e(e){let t=[];for(let[n,r]of e.models)t.push({id:n,filterIdentity:r.sourceFingerprint,sourceContentHash:r.sourceContentHash,tagIds:e.modelTagAssignments.get(n),store:r.ifcDataStore,mutationView:e.mutationViews?.get(n)});return t}function t(e){return new Set(e.modelTags.keys())}export{e as n,t};

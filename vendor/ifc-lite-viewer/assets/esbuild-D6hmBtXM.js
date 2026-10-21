@@ -1,0 +1,1 @@
+var e=`/assets/esbuild-BaXVPFT2.wasm`;export{e as default};

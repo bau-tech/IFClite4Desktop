@@ -85,8 +85,33 @@ On Windows, enable long paths before cloning: `git config --global core.longpath
 ```powershell
 npm install
 npm run app:dev      # run the desktop app in development mode
-npm run app:build    # build the installers (NSIS + MSI)
+npm run app:build    # build the installers (platform-specific)
 ```
+
+**Build outputs:**
+- **Windows:** NSIS installer (`.exe`) and MSI installer (`.msi`) in `src-tauri/target/release/bundle/nsis` and `src-tauri/target/release/bundle/msi`
+- **Linux:** AppImage (`.AppImage`) in `src-tauri/target/release/bundle/appimage`
+
+### Building on Linux
+
+On Ubuntu/Debian, install build dependencies:
+```bash
+sudo apt-get install -y libwebkit2gtk-4.1-dev libssl-dev libappindicator3-dev librsvg2-dev patchelf
+npm install
+npm run app:build
+```
+
+The resulting AppImage runs on any Linux distro without additional dependencies.
+
+### Automated builds
+
+Push a git tag to trigger automated builds for Windows and Linux via GitHub Actions:
+```bash
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+A new GitHub Release is created automatically with all platform installers.
 
 Sample models are in `samples/`.
 

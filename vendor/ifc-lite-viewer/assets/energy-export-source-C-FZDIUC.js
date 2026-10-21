@@ -1,0 +1,1 @@
+function e(e){let{mutationView:t,dataStore:n,schemaVersion:r}=e;return!t||!t.hasPendingChanges()||!n||!n.source||n.source.length===0||r===`IFC5`?null:{dataStore:n,mutationView:t}}export{e as t};

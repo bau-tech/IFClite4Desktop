@@ -1,0 +1,1 @@
+import{__tla as __tla_0}from"./viewerModelIngest-apRyJTrd.js";export{c as parseIfcxViewerModel}from"./viewerModelIngest-apRyJTrd.js";Promise.all([(()=>{try{return __tla_0}catch{}})()]).then(async()=>{});

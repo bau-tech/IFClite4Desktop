@@ -1,0 +1,1 @@
+function e(e){return e.source.toTransferable()}export{e as t};

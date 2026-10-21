@@ -1,0 +1,1 @@
+function e(e,t){return t?`key`in t?e(t.key,t.params):t.text:``}export{e as t};

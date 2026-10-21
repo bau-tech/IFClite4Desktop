@@ -1,0 +1,1 @@
+var e=`/assets/laz-perf-CFJp03W6.wasm`;export{e as default};

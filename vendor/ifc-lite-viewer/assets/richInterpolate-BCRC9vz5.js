@@ -1,0 +1,1 @@
+function e(e,t,n,r={}){let i=n.map((e,t)=>`\uE000${t}\uE001`),a=Object.fromEntries(n.map(([e],t)=>[e,i[t]]));return e(t,{...r,...a}).split(/(\uE000\d+\uE001)/g).filter(Boolean).map(e=>{let t=i.indexOf(e);return t===-1?e:n[t][1]})}export{e as t};

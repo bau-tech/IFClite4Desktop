@@ -1,0 +1,1 @@
+function e(e,t){try{return e.toLocaleString(t)}catch(t){if(!(t instanceof RangeError))throw t;return e.toLocaleString(`en`)}}function t(e,t){try{return new Intl.ListFormat(t,{style:`long`,type:`conjunction`}).format(e)}catch(t){if(!(t instanceof RangeError))throw t;return new Intl.ListFormat(`en`,{style:`long`,type:`conjunction`}).format(e)}}export{t as n,e as t};

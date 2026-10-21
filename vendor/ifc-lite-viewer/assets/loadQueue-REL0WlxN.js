@@ -1,0 +1,1 @@
+var e=Promise.resolve();function t(t){let n=e.then(t);return e=n.then(()=>void 0,()=>void 0),n}export{t};

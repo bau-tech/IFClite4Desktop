@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFClite Desktop — Lite</title>
+</head>
+<body>
+  <div id="app">
+    <header id="toolbar">
+      <span class="brand">IFClite Desktop</span>
+      <div class="sep"></div>
+      <button id="btn-open" class="tb-btn primary" title="Open IFC file (Ctrl+O)">Open…</button>
+      <div class="sep"></div>
+      <button id="btn-fit" class="tb-btn" title="Zoom to fit (F)" disabled>Fit</button>
+      <button id="btn-hide" class="tb-btn" title="Hide selected (H)" disabled>Hide</button>
+      <button id="btn-isolate" class="tb-btn" title="Isolate selected (I)" disabled>Isolate</button>
+      <button id="btn-show-all" class="tb-btn" title="Show all (A)" disabled>Show all</button>
+      <div class="sep"></div>
+      <button id="btn-spaces" class="tb-btn toggle" title="Show spaces and zones (S)">Spaces</button>
+      <button id="btn-tree" class="tb-btn toggle on" title="Toggle structure panel (T)">Structure</button>
+      <div class="sep"></div>
+      <button id="btn-full" class="tb-btn" title="Switch to the full IFC-Lite viewer (WebGPU)">Full viewer</button>
+      <span id="status">Open or drop an IFC file</span>
+      <input type="file" id="file-input" accept=".ifc" hidden />
+    </header>
+
+    <div id="main">
+      <aside id="tree-panel">
+        <div class="panel-head">
+          <span>Structure</span>
+          <span id="tree-count" class="badge" hidden></span>
+        </div>
+        <div class="panel-search">
+          <input id="tree-search" type="search" placeholder="Search name, type or #id" autocomplete="off" />
+        </div>
+        <div id="tree"><p class="placeholder">Open an IFC file to explore its structure.</p></div>
+      </aside>
+
+      <section id="viewport">
+        <canvas id="canvas"></canvas>
+        <div id="drop-hint" hidden>Drop IFC file to open</div>
+        <div id="progress" hidden><div id="progress-bar"></div></div>
+        <div id="help">Orbit: left-drag · Pan: right-drag · Zoom: wheel · Select: click · Focus: double-click</div>
+      </section>
+
+      <aside id="props-panel" hidden>
+        <div class="panel-head props-head">
+          <div class="props-title">
+            <span id="props-type" class="type-badge"></span>
+            <span id="props-name"></span>
+            <span id="props-id"></span>
+          </div>
+          <button id="props-close" class="icon-btn" title="Close (Esc)">✕</button>
+        </div>
+        <div id="props-body"></div>
+      </aside>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

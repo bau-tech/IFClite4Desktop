@@ -1,0 +1,1 @@
+import{a as e,r as t}from"./ghost-shapes-CQMa6OJJ.js";var n=2130706432;function r(e,t=0){let r=0;for(let t of e.models.values())r=Math.max(r,(t.idOffset??0)+(t.maxExpressId??0));return Math.max(n,r+1)+t}function i(n,r,i,a,o,s){return t(n,e(r,i,a),0,o,s)}export{i as n,r as t};
