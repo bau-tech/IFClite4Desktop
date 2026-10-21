@@ -12,19 +12,21 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - uses: dtolnay/rust-toolchain@stable
-      - uses: ryo33/setup-msbuild@v2
 
       - name: Install dependencies
         run: npm install
 
+      - name: Build frontend
+        run: npm run build
+
       - name: Build desktop app
         run: npm run app:build
-        env:
-          IFCLITE_SRC: ${{ github.workspace }}\..\..\ifc-lite-src
 
       - name: Upload Windows artifacts
         uses: actions/upload-artifact@v4
@@ -38,6 +40,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -51,10 +55,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build frontend
+        run: npm run build
+
       - name: Build desktop app
         run: npm run app:build
-        env:
-          IFCLITE_SRC: ${{ github.workspace }}/../../ifc-lite-src
 
       - name: Upload Linux artifacts
         uses: actions/upload-artifact@v4

@@ -103,6 +103,27 @@ npm run app:build
 
 The resulting AppImage runs on any Linux distro without additional dependencies.
 
+### Updating the full viewer
+
+The full viewer is pre-built and committed to `vendor/ifc-lite-viewer/`. To update it:
+
+```powershell
+# Clone and build the IFC-Lite monorepo
+git clone https://github.com/LTplus-AG/ifc-lite.git E:\ifc-lite-src
+cd E:\ifc-lite-src
+npx pnpm@10.8.1 install --filter "@ifc-lite/viewer..."
+node scripts/fetch-prebuilt-wasm.mjs
+npx pnpm@10.8.1 exec turbo build --filter="@ifc-lite/viewer..." --filter="!@ifc-lite/wasm"
+
+# Return to this project and rebuild the viewer
+cd E:\IFClite4Desktop
+npm run viewer:build
+
+# Commit the updated vendor directory
+git add vendor/ifc-lite-viewer/
+git commit -m "chore: update full viewer"
+```
+
 ### Automated builds
 
 Push a git tag to trigger automated builds for Windows and Linux via GitHub Actions:
@@ -111,7 +132,13 @@ git tag v0.1.1
 git push origin v0.1.1
 ```
 
-A new GitHub Release is created automatically with all platform installers.
+GitHub Actions will:
+1. Check out your code (including the pre-built viewer in `vendor/ifc-lite-viewer/`)
+2. Build the frontend
+3. Build the desktop app for **Windows** (NSIS + MSI) and **Linux** (AppImage)
+4. Create a GitHub Release with all installers
+
+No monorepo checkout needed — CI uses the vendored viewer directly.
 
 Sample models are in `samples/`.
 
