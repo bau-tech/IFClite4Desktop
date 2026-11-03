@@ -65,12 +65,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux-build
-          path: src-tauri/target/release/bundle/appimage/*
+          path: src-tauri/target/release/bundle/appimage/*.AppImage
 
   create-release:
     needs: [build-windows, build-linux]
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/v')
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
