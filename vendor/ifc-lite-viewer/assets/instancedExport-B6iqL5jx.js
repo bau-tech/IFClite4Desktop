@@ -1,0 +1,1 @@
+export{n as withInstancedMeshes}from"./instancedExport-CiNfToX2.js";

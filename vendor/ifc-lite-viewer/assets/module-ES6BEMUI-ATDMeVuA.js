@@ -1,1 +1,0 @@
-import{__tla as __tla_0}from"./sandbox-BWnpgIZ-.js";export{a as QuickJSModuleCallbacks,o as QuickJSWASMModule,s as applyBaseRuntimeOptions,c as applyModuleEvalRuntimeOptions}from"./sandbox-BWnpgIZ-.js";Promise.all([(()=>{try{return __tla_0}catch{}})()]).then(async()=>{});

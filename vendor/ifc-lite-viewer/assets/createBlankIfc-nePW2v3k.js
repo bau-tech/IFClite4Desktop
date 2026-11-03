@@ -1,0 +1,1 @@
+import{ji as e}from"./sandbox-CVR48IFj.js";function t(t={}){let{projectName:n=`Untitled Project`,storeyName:r=`Level 1`,storeyElevation:i=0}=t,a=new e({Name:n});a.addIfcBuildingStorey({Name:r,Elevation:i});let{content:o}=a.toIfc(),s=n.replace(/[^a-z0-9_-]+/gi,`_`).replace(/^_+|_+$/g,``)||`untitled`;return new File([o],`${s}.ifc`,{type:`application/ifc`})}export{t};

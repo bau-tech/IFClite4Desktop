@@ -1,0 +1,1 @@
+import{Ps as e}from"./exporters-zDp1S8_I.js";var t=16,n=new Map,r=new WeakMap,i=e;function a(e,r){r.enabled&&(n.delete(e),n.set(e,r),n.size>t&&n.delete(n.keys().next().value),i=r)}function o(){return i}function s(t){return n.get(t)??e}function c(t,n){if(!t.enabled)return e;let i=r.get(t);return i||r.set(t,i=new Set),i.has(n)?e:(i.add(n),t)}export{c as i,s as n,a as r,o as t};

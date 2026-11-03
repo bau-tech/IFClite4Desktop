@@ -7,7 +7,7 @@
 // without patching its source. Run through `npm run viewer:build`.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Plugin, UserConfig } from 'vite';
+import type { ConfigEnv, Plugin, UserConfig, UserConfigExport } from 'vite';
 import viewerConfig from '../../ifc-lite-src/apps/viewer/vite.config';
 
 const hostDir = path.dirname(fileURLToPath(import.meta.url));
@@ -26,9 +26,13 @@ function useDesktopEntry(): Plugin {
   };
 }
 
-const base = viewerConfig as UserConfig;
-
-export default {
+// The viewer's config may be an object or (since viewer 5.5) a function of the
+// Vite env; resolve it either way so its worker/build settings are kept.
+export default async (env: ConfigEnv): Promise<UserConfig> => {
+  const exported = viewerConfig as UserConfigExport;
+  const base: UserConfig =
+    typeof exported === 'function' ? await exported(env) : await exported;
+  return {
   ...base,
   root: viewerDir,
   plugins: [useDesktopEntry(), ...(base.plugins ?? [])],
@@ -42,4 +46,5 @@ export default {
       '@ifc-lite/plugin-api': path.resolve(viewerDir, '../../packages/plugin-api/dist/index.js'),
     },
   },
-} satisfies UserConfig;
+  };
+};

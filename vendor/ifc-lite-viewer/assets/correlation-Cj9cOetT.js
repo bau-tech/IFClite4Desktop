@@ -1,0 +1,1 @@
+import{n as e}from"./dist-CJe1XjoM.js";import{I as t}from"./analytics-BONqehKB.js";function n(t){if(t&&e(t.uuid)&&e(t.properties.$session_id)&&typeof t.properties.app_build_sha==`string`)return{eventId:t.uuid,sessionId:t.properties.$session_id,buildSha:t.properties.app_build_sha}}function r(e,r){let i=n(r);i&&t(e,i)}export{n,r as t};

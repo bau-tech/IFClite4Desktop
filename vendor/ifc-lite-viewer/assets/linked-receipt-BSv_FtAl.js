@@ -1,0 +1,1 @@
+import{of as e}from"./store-CAB0raay.js";var t=e(()=>({id:null}));export{t};

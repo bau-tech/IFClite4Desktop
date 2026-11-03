@@ -1,0 +1,1 @@
+import{of as e}from"./store-CAB0raay.js";var t=e(()=>({text:``,intent:null}));function n(e,n=null){t.setState({text:e,intent:n})}export{t as n,n as t};

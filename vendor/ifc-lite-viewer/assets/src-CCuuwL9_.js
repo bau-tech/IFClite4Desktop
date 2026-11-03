@@ -1,0 +1,1 @@
+export{f as DEFAULT_LIMITS,p as DEFAULT_PERMISSIONS,h as NAMESPACE_SCHEMAS,_ as NetworkDeniedError,m as SANDBOX_CONSOLE_LEVELS,t as Sandbox,n as SandboxAbortError,r as ScriptError,d as buildBridge,v as coreNetworkRequest,i as createSandbox,y as isHostGranted,a as isSandboxRuntimeAborted,g as marshalValue,u as transpileTypeScript}from"./sandbox-CVR48IFj.js";

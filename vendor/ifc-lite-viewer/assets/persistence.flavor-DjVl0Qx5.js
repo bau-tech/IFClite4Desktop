@@ -1,0 +1,1 @@
+import{S as e,g as t,i as n,l as r,m as i,p as a}from"./persistence-BVovk9rj.js";function o(e,n){return{schemaVersion:1,settings:{...n},presets:t(e)}}function s(t){if(!t||typeof t!=`object`)return null;let o=t,s=(Array.isArray(o.presets)?o.presets:[]).filter(r).map(t=>e(t,n().has(t.id)));return{presets:a(s),settings:i(o.settings)}}export{o as n,s as t};

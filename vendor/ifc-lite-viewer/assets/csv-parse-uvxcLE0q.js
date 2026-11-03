@@ -1,0 +1,4 @@
+function e(e,t,n){let r=[],i=``,a=[],o=!1,s=!1,c=0,l=e.length,u=()=>{a.push(i),i=``,s=!1},d=()=>{u(),r.push(a),a=[]};for(;c<l;){let r=e[c];if(o){if(r===`"`){if(e[c+1]===`"`){i+=`"`,c+=2;continue}o=!1,s=!0,c+=1;continue}i+=r,c+=1}else{if(n&&s&&r!==t&&r!==`\r`&&r!==`
+`||n&&r===`"`&&i.length>0)throw Error(`Malformed CSV quoting`);r===`"`&&i.length===0?(o=!0,c+=1):r===t?(u(),c+=1):r===`\r`&&e[c+1]===`
+`?(d(),c+=2):r===`
+`||r===`\r`?(d(),c+=1):(i+=r,c+=1)}}if(n&&o)throw Error(`Unclosed CSV quote`);return(i.length>0||a.length>0)&&d(),r}function t(t,n=`,`,r=!1){t.charCodeAt(0)===65279&&(t=t.slice(1));let i=e(t,n,r).filter((e,t,n)=>t!==n.length-1||e.length!==1||e[0]!==``);if(i.length===0)return{header:[],rows:[]};let[a,...o]=i,s=a.length;return{header:a,rows:o.map(e=>({fields:e,fieldCountMismatch:e.length!==s}))}}export{t};

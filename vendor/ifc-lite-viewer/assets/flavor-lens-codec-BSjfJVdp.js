@@ -1,0 +1,1 @@
+import{r as e}from"./migrate-saved-lens-BYZyaQRf.js";function t(t){return t.flatMap(t=>{let n=e(t);if(typeof t==`object`&&t&&`format`in t&&t.format===`ifc-lite-captured-lens`&&(!n||!n.id))throw Error(`The captured Lens population in this flavor cannot be read.`);return n?.id?[{...n,id:n.id}]:[]})}export{t as decodeFlavorLenses};

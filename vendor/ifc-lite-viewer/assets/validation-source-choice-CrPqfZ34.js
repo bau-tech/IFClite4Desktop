@@ -1,0 +1,1 @@
+import{of as e}from"./store-CAB0raay.js";var t=e()(()=>({choice:null}));function n(e){t.setState({choice:e})}export{t as n,n as t};

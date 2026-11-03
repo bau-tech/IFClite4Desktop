@@ -1,7 +1,7 @@
 {
   "name": "ifclite4desktop",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "license": "MPL-2.0",
   "description": "Windows desktop IFC viewer built on IFC-Lite, Three.js (WebGL) and Tauri",
@@ -16,9 +16,9 @@
     "app:build": "tauri build"
   },
   "dependencies": {
-    "@ifc-lite/data": "^6.2.0",
-    "@ifc-lite/geometry": "^7.8.1",
-    "@ifc-lite/parser": "^9.5.1",
+    "@ifc-lite/data": "^6.4.0",
+    "@ifc-lite/geometry": "^8.1.0",
+    "@ifc-lite/parser": "^9.9.0",
     "@tauri-apps/api": "^2.12.4",
     "@tauri-apps/plugin-dialog": "^2.8.3",
     "three": "^0.186.1"

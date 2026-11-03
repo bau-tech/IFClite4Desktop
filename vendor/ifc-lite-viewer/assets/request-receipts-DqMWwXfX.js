@@ -1,0 +1,1 @@
+import{of as e}from"./store-CAB0raay.js";var t=e(()=>({receipts:[],inFlight:[]}));function n(e){t.setState(t=>({receipts:[...t.receipts,e].slice(-50),inFlight:t.inFlight.filter(t=>t.id!==e.id)}))}function r(e){t.setState(t=>({inFlight:[...t.inFlight,e]}))}export{r as n,t as r,n as t};

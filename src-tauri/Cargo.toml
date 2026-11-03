@@ -1,6 +1,6 @@
 [package]
 name = "ifclite-desktop"
-version = "0.1.0"
+version = "0.1.1"
 description = "Windows desktop IFC viewer built on IFC-Lite and Three.js"
 edition = "2021"
 license = "MPL-2.0"

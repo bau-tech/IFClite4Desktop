@@ -1,0 +1,1 @@
+import"./exporters-zDp1S8_I.js";export{t as parseFederatedIfcx,n as parseIfcx}from"./ifcx-parser-DleS--yZ.js";
