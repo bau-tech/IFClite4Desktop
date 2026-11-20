@@ -1,0 +1,1 @@
+function e(e,t){return t&&e.includes(t)?t:e[0]??``}export{e as t};

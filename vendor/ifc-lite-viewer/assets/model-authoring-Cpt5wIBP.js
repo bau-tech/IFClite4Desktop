@@ -1,0 +1,1 @@
+export{t as AUTHORING_CLASSES,n as AUTHORING_OPS,r as HOSTED_KINDS,i as MODEL_AUTHORING_LIMIT,a as createParams,o as isNewElement,s as parseModelAuthoringBatch,c as pointToMetres,l as toMetres}from"./model-authoring-DPDBbBzn.js";

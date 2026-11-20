@@ -1,1 +1,0 @@
-export{c as parseIfcxViewerModel}from"./viewerModelIngest-B7hxOWHO.js";

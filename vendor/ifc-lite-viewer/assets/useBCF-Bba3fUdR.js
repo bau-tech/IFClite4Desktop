@@ -1,0 +1,1 @@
+export{t as clearGlobalRefs,n as getGlobalCanvas,r as getGlobalRenderer,i as setGlobalCanvasRef,a as setGlobalRendererRef,o as subscribeGlobalRenderer,s as useBCF}from"./useBCF-B_hyjpx5.js";

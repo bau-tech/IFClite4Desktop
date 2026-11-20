@@ -1,0 +1,1 @@
+function e(e){return e.ifcDataStore?.entities??e.ifcDataStore}function t(t,n,r){t.set(n,e(r))}function n(t,n){for(let[r,i]of t){let t=n.get(r);if(!t||e(t)!==i)return!1}return!0}function r(e){let n=new Map;for(let[r,i]of e)i.ifcDataStore&&t(n,r,i);return n}export{t as i,n,e as r,r as t};

@@ -1,0 +1,1 @@
+var e={down:{labelKey:`sectionTool.axis.down`},front:{labelKey:`sectionTool.axis.front`},side:{labelKey:`sectionTool.axis.side`}};function t(e,t){switch(e){case`down`:return t?`bottom`:`top`;case`front`:return t?`back`:`front`;case`side`:return t?`left`:`right`}}export{t as n,e as t};

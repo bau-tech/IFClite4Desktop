@@ -1,0 +1,1 @@
+var e=`text-foreground underline decoration-muted-foreground/50 underline-offset-2 transition-colors hover:decoration-foreground`;export{e as t};

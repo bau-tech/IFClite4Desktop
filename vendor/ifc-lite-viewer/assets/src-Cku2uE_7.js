@@ -1,0 +1,1 @@
+export{c as DEFAULT_LIMITS,l as DEFAULT_PERMISSIONS,d as NAMESPACE_SCHEMAS,p as NetworkDeniedError,u as SANDBOX_CONSOLE_LEVELS,t as Sandbox,n as SandboxAbortError,r as ScriptError,s as buildBridge,m as coreNetworkRequest,i as createSandbox,h as isHostGranted,a as isSandboxRuntimeAborted,f as marshalValue,o as transpileTypeScript}from"./sandbox-6BvT13qB.js";

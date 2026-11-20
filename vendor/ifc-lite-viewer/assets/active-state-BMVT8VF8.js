@@ -1,0 +1,1 @@
+var e=`bg-active-surface text-active ring-1 ring-inset ring-active-border`,t=`border-active-border bg-active-surface text-active`,n=`data-[state=active]:!bg-active-surface data-[state=active]:!text-active data-[state=active]:shadow-none data-[state=active]:ring-1 data-[state=active]:ring-inset data-[state=active]:ring-active-border`;export{e as n,n as r,t};

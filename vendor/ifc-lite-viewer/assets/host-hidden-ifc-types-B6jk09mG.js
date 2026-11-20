@@ -1,0 +1,1 @@
+function e(e,t){return!t||!e?!1:t.has(e.toLowerCase())}export{e as t};

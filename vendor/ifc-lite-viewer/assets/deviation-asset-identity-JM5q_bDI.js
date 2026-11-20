@@ -1,0 +1,1 @@
+function e(e,t){return e.map(e=>{let n=t.resolveGlobalIdFromModels(e.expressId),r=n?t.models.get(n.modelId):void 0,i=r?.ifcDataStore?.entities;return{modelId:r&&n?n.modelId:null,modelName:r?.name??null,expressId:i&&n?n.expressId:null,globalId:n&&i?.getGlobalId(n.expressId)||null,name:n&&i?.getName(n.expressId)||null,ifcClass:n&&i?.getTypeName(n.expressId)||null}})}export{e as t};

@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-BCiCTKAo.js";import{o as t}from"./grid-layout-BPAXLiFy.js";import{as as n,n as r,os as i,rs as a}from"./store-CnnNEa_a.js";var o=e(t(),1);function s(){let e=r(e=>e.sectionPlane),t=r(e=>e.inactiveSectionPlanes);return(0,o.useMemo)(()=>{let r=i(e,t);return{active:e,planes:n(e,t),count:r,atLimit:1+t.length>=a}},[e,t])}export{s as t};

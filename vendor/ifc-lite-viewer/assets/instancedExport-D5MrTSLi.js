@@ -1,0 +1,1 @@
+export{r as withInstancedMeshes}from"./instancedExport-0SrspgyM.js";

@@ -1,0 +1,1 @@
+import{n as e}from"./store-CnnNEa_a.js";import{t}from"./viewpoint-world-frame-BWoKXr_5.js";function n(){let n=e.getState(),r=n.clashResult;return r?{clashes:r.clashes,rules:r.rulesRun.map(e=>e.id),worldOffset:t(n.models,n.geometryResult)}:null}export{n as t};

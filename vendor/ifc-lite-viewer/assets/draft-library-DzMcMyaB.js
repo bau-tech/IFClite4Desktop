@@ -1,0 +1,1 @@
+export{t as BCF_DRAFTS_LEGACY_KEY,n as adoptImportedBatches,r as bcfDraftLibrary,i as bcfDraftsContent,a as saveDraftBatch,o as useBcfDraftLibrary}from"./draft-library-B8XYpdLB.js";

@@ -1,0 +1,1 @@
+import"./exporters-Dg8RURu9.js";export{t as parseFederatedIfcx,n as parseIfcx}from"./ifcx-parser-qUihswrx.js";

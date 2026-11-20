@@ -1,0 +1,1 @@
+function e(){return`batch_${Date.now()}_${Math.random().toString(36).slice(2,10)}`}function t(e,t,n){let r=new Map(e);for(let e of t)r.set(e,n);return r}function n(e,t){let n=[];for(let[r,i]of e){let e=t.get(r)??0;for(let t=e;t<i.length;t+=1)n.push(i[t].id)}return n}function r(e){return new Map([...e].map(([e,t])=>[e,t.length]))}export{t as i,e as n,r,n as t};

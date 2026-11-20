@@ -1,0 +1,1 @@
+import{r as e}from"./federation-identity-Bpqi02wu.js";var t=new WeakMap;function n(e,n){t.set(e,n)}function r(n,r,i){if(!n)return!0;let a=t.get(n);if(!a||!a.has(r))return!0;let o=i.get(r);return o?e(o)===a.get(r):!1}function i(e){let n=e?t.get(e):void 0;return n?[...n.keys()].sort():null}export{i as n,n as r,r as t};

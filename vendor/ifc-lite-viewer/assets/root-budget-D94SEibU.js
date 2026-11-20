@@ -1,0 +1,1 @@
+import{t as e}from"./budget-DIuumJRJ.js";var t={maxRequests:16,maxOutputTokens:40960};function n(n=t){return e(n)}export{n,t};

@@ -1,0 +1,1 @@
+function e(e){return e===null||typeof e!=`object`&&typeof e!=`function`?!1:`name`in e&&e.name===`AbortError`}export{e as t};

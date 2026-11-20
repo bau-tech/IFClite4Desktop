@@ -1,0 +1,1 @@
+function e(e,t){if(e===void 0)return t;if(typeof e!=`number`||!Number.isSafeInteger(e)||e<1)throw Error(`maxOutputTokens must be a positive safe integer`);return Math.min(e,t)}var t=8192,n=8192,r=32e3;export{e as i,n,t as r,r as t};

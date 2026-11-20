@@ -1,0 +1,1 @@
+export{t as georeferencedPlacementFrameKey,n as placementFrameBase,r as placementFrameBaseKey,i as placementFrameCoordinateInfo,a as placementFrameFields,o as placementFrameKey,s as restoreWorkspacePlacements,c as saveWorkspacePlacements}from"./persistence-B28X0AP2.js";

@@ -1,0 +1,1 @@
+import{t as e}from"./react-DISsIGn0.js";var t=e(()=>({id:null}));export{t};

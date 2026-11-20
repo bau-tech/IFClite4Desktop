@@ -1,0 +1,1 @@
+function e(e,t,n=!1){let r=new Date(e);try{return n?r.toLocaleDateString(t):r.toLocaleString(t)}catch(e){if(!(e instanceof RangeError))throw e;return n?r.toLocaleDateString(`en`):r.toLocaleString(`en`)}}export{e as t};

@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-BCiCTKAo.js";import{i as t,o as n}from"./grid-layout-BPAXLiFy.js";var r=e(n(),1),i=t(),a=r.createContext(null);function o({container:e,children:t}){return(0,i.jsx)(a.Provider,{value:e,children:t})}function s(){return r.useContext(a)??void 0}export{s as n,o as t};

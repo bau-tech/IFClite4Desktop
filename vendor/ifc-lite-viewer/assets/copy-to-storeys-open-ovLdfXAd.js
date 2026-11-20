@@ -1,0 +1,1 @@
+var e=`ifc-lite:copy-to-storeys`;function t(){window.dispatchEvent(new Event(e))}export{t as n,e as t};

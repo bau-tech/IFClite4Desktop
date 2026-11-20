@@ -1,0 +1,1 @@
+import{t as e}from"./pako.esm-Axd2AgHX.js";import{BaseDecoder as t,__tla as __tla_0}from"./geotiff-D0CIDcC1.js";let n;let __tla=Promise.all([(()=>{try{return __tla_0}catch{}})()]).then(async()=>{n=class extends t{decodeBlock(t){return e(new Uint8Array(t)).buffer}}});export{n as default,__tla};

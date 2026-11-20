@@ -1,0 +1,1 @@
+import{n as e}from"./store-CnnNEa_a.js";import{a as t,i as n}from"./storey-actions-DuiYFSUa.js";function r(r,i,a,o){let s=n(e.getState(),r,i,a,o);return s?t(e,r,{kind:`add`,params:{Name:s.Name,Elevation:s.Elevation,referenceStoreyId:i}}):{ok:!1,reason:`No model loaded for id "${r}"`,refusals:[]}}export{r as t};

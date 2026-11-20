@@ -1,0 +1,1 @@
+export{t as applyZoneWriteBack,n as collidesByName,r as removeZoneWriteBack,i as useZoneWriteBack,a as zonePropertySetNamesOnElement}from"./useZoneWriteBack-Csfi1OHf.js";

@@ -1,0 +1,1 @@
+export{t as modelCapabilities}from"./model-capabilities-BS3XN0hr.js";

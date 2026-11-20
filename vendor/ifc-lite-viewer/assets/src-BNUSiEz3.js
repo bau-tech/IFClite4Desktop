@@ -1,1 +1,0 @@
-export{xs as IfcTypeEnumFromString,lo as getEntities}from"./exporters-zDp1S8_I.js";

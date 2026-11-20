@@ -1,0 +1,1 @@
+export{t as STRUCTURAL_GRAPH_GUIDANCE,n as STRUCTURAL_OPS,r as declaresStructuralGraph,i as parseStructuralProposal,a as structuralRef,o as structuralSnapshotWork}from"./structural-graph-proposal-UUUvQZca.js";

@@ -1,0 +1,1 @@
+import{r as e}from"./draft-footer-CP9x2K5D.js";function t(t){let n=JSON.stringify(t??null);return`${n.length}:${e([n])}`}var n={type:`string`,maxLength:64};function r(e,n,r){if(t(e)!==n)throw Error(r)}export{n,t as r,r as t};

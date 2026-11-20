@@ -1,0 +1,1 @@
+import{f as e}from"./mutation-view-CPeqVKdV.js";function t(t,n){if(t.collabRoomId===null)return;let r=t.collabRoomModels.get(n);if(r&&r.pathPrefix!==``&&n===e(t.collabRoomId,r.slotId))return r.pathPrefix}export{t};

@@ -1,1 +1,0 @@
-export{t as EventStreamSerde,r as eventStreamSerdeProvider}from"./index.browser-BEm-79SP.js";import"./dist-es-B-2bqGsv.js";

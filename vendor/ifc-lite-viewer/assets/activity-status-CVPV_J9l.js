@@ -1,0 +1,1 @@
+var e={running:`running`,completed:`complete`,partial:`partial`,failed:`failed`,cancelled:`cancelled`,interrupted:`interrupted`};export{e as t};

@@ -1,0 +1,1 @@
+import{T as e,_ as t,f as n,g as r,o as i,y as a}from"./persistence-DIQRI58r.js";function o(e,t){return{schemaVersion:1,settings:{...t},presets:a(e)}}function s(a){if(!a||typeof a!=`object`)return null;let o=a,s=(Array.isArray(o.presets)?o.presets:[]).filter(n).map(t=>e(t,i().has(t.id)));return{presets:r(s),settings:t(o.settings)}}export{o as n,s as t};

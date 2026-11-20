@@ -1,0 +1,1 @@
+export{t as __afterLoadIdleHeldForTests,n as __resetAfterLoadIdleForTests,r as idlePeriod,i as scheduleAfterLoad}from"./afterLoadIdle-C2LNVScj.js";

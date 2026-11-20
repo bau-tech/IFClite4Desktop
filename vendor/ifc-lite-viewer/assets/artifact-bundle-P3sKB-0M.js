@@ -1,0 +1,1 @@
+import{P as e,j as t}from"./bcf-SLdjgRQf.js";function n(n){let r={};for(let e of n)r[`${e.base}.${e.ext}`]=typeof e.content==`string`?t(e.content):e.content;return new Promise((t,n)=>{e(r,{level:6},(e,r)=>e?n(e):t(r))})}export{n as t};

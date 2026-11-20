@@ -1,0 +1,1 @@
+function e(e){return Number.isFinite(e)&&e>=1&&e<=2147483647?Math.trunc(e):1}export{e as t};

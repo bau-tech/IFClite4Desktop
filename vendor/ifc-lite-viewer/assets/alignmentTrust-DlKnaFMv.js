@@ -1,0 +1,1 @@
+function e(e){return e!==`same-crs`&&e!==`reprojected`}export{e as t};

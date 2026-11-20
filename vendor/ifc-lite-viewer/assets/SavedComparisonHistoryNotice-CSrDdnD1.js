@@ -1,0 +1,1 @@
+import{n as e}from"./store-CnnNEa_a.js";import{t}from"./ContentStorageNotice-Cp3Nx5u8.js";import{i as n}from"./grid-layout-BPAXLiFy.js";var r=n();function i(){let n=e(e=>e.savedComparisonsStorage),i=e(e=>e.retrySaveComparisons);return(0,r.jsx)(t,{status:n,restore:()=>e.getState().restoreSavedComparisons(),retry:i})}export{i as t};

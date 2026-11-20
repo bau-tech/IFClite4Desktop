@@ -1,0 +1,1 @@
+import{t as e}from"./react-DISsIGn0.js";var t=e(()=>({byBatch:new Map}));function n(e,n){t.setState(t=>{let r=new Map(t.byBatch).set(e,n);for(let e of r.keys()){if(r.size<=1e3)break;r.delete(e)}return{byBatch:r}})}function r(e,t){return t.startsWith(`batch:`)?e.get(t.slice(6)):void 0}export{n,t as r,r as t};

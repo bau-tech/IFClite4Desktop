@@ -1,0 +1,1 @@
+export{t as EDITABLE_ATTRIBUTES,n as MODEL_CHANGE_LIMIT,r as MODEL_DATA_CHANGE_OUTPUT_GUIDANCE,i as changeKey,a as parseModelChangeBatch}from"./artifacts-ZbFg8-B9.js";

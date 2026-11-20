@@ -1,0 +1,1 @@
+export{t as ROOM_COMMAND_GUIDANCE,n as declaresRoomCommand,r as parseRoomProposal}from"./room-command-proposal-DiC38GBc.js";

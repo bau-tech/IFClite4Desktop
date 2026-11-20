@@ -1,0 +1,1 @@
+var e=`document-preview-paper`,t=`document-preview-muted`;function n(e,n,r){return n!==void 0||r!==void 0||e<=118?{className:void 0,color:n??`rgb(${e}, ${e}, ${e})`}:{className:t,color:void 0}}export{e as n,n as r,t};

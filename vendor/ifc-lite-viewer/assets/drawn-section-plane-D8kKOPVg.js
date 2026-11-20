@@ -1,0 +1,1 @@
+function e(e){return e.drawing2DPlane??e.sectionPlane}export{e as t};

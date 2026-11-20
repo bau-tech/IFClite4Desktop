@@ -1,0 +1,1 @@
+function e(e){return e.gaussianSplat!==void 0}function t(t){return[...t.values()].filter(t=>!e(t))}function n(t){let n=0;for(let r of t.values())e(r)&&n++;return n}export{e as n,n as r,t};

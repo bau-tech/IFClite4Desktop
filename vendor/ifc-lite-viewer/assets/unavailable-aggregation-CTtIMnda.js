@@ -1,0 +1,1 @@
+function e(e){return{...e,categories:[],series:[],total:0,categoryOf:new Map}}export{e as t};

@@ -1,0 +1,1 @@
+export{Wc as IfcTypeEnumFromString,Os as getEntities,Fs as getEntitiesIfc2x3,Ps as getEntitiesIfc4Express,Ns as getEntitiesIfc4x3}from"./exporters-Dg8RURu9.js";
