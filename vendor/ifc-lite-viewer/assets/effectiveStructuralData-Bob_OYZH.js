@@ -1,1 +1,0 @@
-import{Mt as e,tn as t}from"./exporters-Dg8RURu9.js";var n=new WeakMap;function r(r,i){let a=i?.getMutationRevision(),o=n.get(r);if(o&&o.view===i&&o.revision===a&&o.source===r.source)return o.data;let s=t(r,i?e(r,i):void 0);return n.set(r,{view:i,revision:a,source:r.source,data:s}),s}export{r as t};

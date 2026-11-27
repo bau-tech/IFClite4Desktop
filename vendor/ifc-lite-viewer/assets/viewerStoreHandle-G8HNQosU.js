@@ -1,0 +1,1 @@
+var e=`__ifc_lite_viewer_store__`,t=globalThis;function n(){return t[e]}function r(n){t[e]=n}function i(){let n=t[e];if(!n)throw Error(`viewer store read before '@/store' was imported`);return n.getState()}export{n,r,i as t};

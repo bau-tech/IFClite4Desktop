@@ -1,1 +1,0 @@
-export{t as deserializeClashConfig}from"./persistence.flavor-BzSUExHP.js";

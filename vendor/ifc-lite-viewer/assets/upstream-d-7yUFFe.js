@@ -1,0 +1,1 @@
+function e(e,t){let n=new Set(t),r=[...n];for(let t=0;t<r.length;t++){let i=r[t];for(let t of e.edges)t.to[0]===i&&!n.has(t.from[0])&&(n.add(t.from[0]),r.push(t.from[0]))}return n}export{e as t};

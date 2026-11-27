@@ -1,0 +1,1 @@
+import{ns as e}from"./store-CY9b5xES.js";import"./useBCF-COaoxjep.js";import{a as t}from"./capture-viewpoint-D91oQ9bu.js";import{c as n}from"./refusals-Bi-AEsoL.js";var r=`Native viewport renderer is not ready.`;async function i(i,a){let o=e();if(!o)throw n(r);return t(o,{read:i,signal:a})}export{i as n,r as t};

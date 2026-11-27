@@ -1,0 +1,1 @@
+export{t as viewerTableAccess}from"./viewer-tables-DwWcjoSh.js";

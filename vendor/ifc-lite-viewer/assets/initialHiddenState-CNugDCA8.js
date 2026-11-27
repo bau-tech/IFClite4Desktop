@@ -1,1 +1,0 @@
-import{n as e}from"./store-CnnNEa_a.js";function t(t,n){if(n.length===0)return;let r=e.getState();r.hideEntities(n.map(e=>r.toGlobalId(t,e)))}export{t};

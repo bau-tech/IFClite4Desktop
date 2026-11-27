@@ -1,0 +1,1 @@
+import{c as e,i as t}from"./refusals-Bi-AEsoL.js";function n(n,r){if(!n.scheduleData)throw e(`Initialize the native timeline for the target model first.`);if(n.scheduleSourceModelId!==r)throw t(`wrong-target`,`The loaded timeline belongs to a different model.`);return n.scheduleData}export{n as t};

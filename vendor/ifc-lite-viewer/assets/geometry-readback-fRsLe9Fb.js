@@ -1,0 +1,1 @@
+import{i as e}from"./released-mesh-provenance-Ql2OYI0w.js";var t=class extends Error{constructor(e){super(e),this.name=`GeometryUnavailableError`}};function n(t){return!e(t)}export{n,t};

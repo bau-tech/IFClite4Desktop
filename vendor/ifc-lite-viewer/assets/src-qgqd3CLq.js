@@ -1,0 +1,1 @@
+export{w as DEFAULT_LIMITS,T as DEFAULT_PERMISSIONS,D as NAMESPACE_SCHEMAS,k as NetworkDeniedError,E as SANDBOX_CONSOLE_LEVELS,t as Sandbox,n as SandboxAbortError,r as ScriptError,s as buildBridge,A as coreNetworkRequest,i as createSandbox,j as isHostGranted,a as isSandboxRuntimeAborted,O as marshalValue,o as transpileTypeScript}from"./sandbox-DFPbTbin.js";

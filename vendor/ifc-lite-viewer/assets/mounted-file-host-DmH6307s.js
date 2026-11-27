@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-BCiCTKAo.js";import{o as t}from"./grid-layout-BPAXLiFy.js";var n=e(t(),1),r=null,i=new Set,a=()=>r;function o(e){return r=e,i.forEach(e=>e()),()=>{r===e&&(r=null,i.forEach(e=>e()))}}function s(){return(0,n.useSyncExternalStore)(e=>(i.add(e),()=>{i.delete(e)}),a,()=>null)}export{o as n,s as r,a as t};

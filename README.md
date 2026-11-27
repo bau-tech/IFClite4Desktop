@@ -43,8 +43,8 @@ The steps below build it on E: (the monorepo needs several GB):
 git clone https://github.com/LTplus-AG/ifc-lite.git E:\ifc-lite-src
 cd E:\ifc-lite-src
 npx pnpm@10.8.1 install --filter "@ifc-lite/viewer..."
-node scripts/fetch-prebuilt-wasm.mjs        # prebuilt WASM, no wasm-pack needed
-npx pnpm@10.8.1 exec turbo build --filter="@ifc-lite/viewer..." --filter="!@ifc-lite/wasm"
+node scripts/fetch-prebuilt-wasm.mjs --force  # prebuilt WASM, no wasm-pack needed
+npx pnpm@10.8.1 exec turbo build --filter="@ifc-lite/viewer..." --filter="!@ifc-lite/wasm" --filter="!@ifc-lite/viewer"
 ```
 
 Then build the viewer with this app's extra cloud sources and copy it to `vendor\ifc-lite-viewer`:
@@ -112,8 +112,8 @@ The full viewer is pre-built and committed to `vendor/ifc-lite-viewer/`. To upda
 git clone https://github.com/LTplus-AG/ifc-lite.git E:\ifc-lite-src
 cd E:\ifc-lite-src
 npx pnpm@10.8.1 install --filter "@ifc-lite/viewer..."
-node scripts/fetch-prebuilt-wasm.mjs
-npx pnpm@10.8.1 exec turbo build --filter="@ifc-lite/viewer..." --filter="!@ifc-lite/wasm"
+node scripts/fetch-prebuilt-wasm.mjs --force
+npx pnpm@10.8.1 exec turbo build --filter="@ifc-lite/viewer..." --filter="!@ifc-lite/wasm" --filter="!@ifc-lite/viewer"
 
 # Return to this project and rebuild the viewer
 cd E:\IFClite4Desktop

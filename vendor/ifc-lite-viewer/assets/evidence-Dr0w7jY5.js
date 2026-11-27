@@ -1,1 +1,0 @@
-export{t as captureEvidence,n as evidenceIsCurrent,D as evidenceJson,r as sourceIdentity}from"./evidence-DWFPi_me.js";

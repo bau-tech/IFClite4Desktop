@@ -1,0 +1,1 @@
+export{t as applyZoneWriteBack,n as collidesByName,r as planZoneRemoval,i as removeZoneWriteBack,a as useZoneWriteBack,o as zonePropertySetNamesOnElement}from"./useZoneWriteBack-BYks4gwc.js";

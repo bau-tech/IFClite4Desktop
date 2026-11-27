@@ -1,0 +1,1 @@
+import{c as e}from"./model-compat-BwdzpCTO.js";import{r as t}from"./mutation-view-DfJcjX8T.js";function n(n){return r=>{let i=n.getState(),a=r??i.activeModelId??void 0;if(!a)return;let o=e(i,a)?.ifcDataStore;if(!o)return;let s=t(n,a);if(s)return{entities:o.entities,mutationView:s,strings:o.strings??null}}}export{n as t};

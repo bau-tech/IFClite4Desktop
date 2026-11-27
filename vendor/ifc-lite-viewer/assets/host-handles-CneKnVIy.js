@@ -1,1 +1,0 @@
-function e(e,t,n=()=>!0){for(let[r,i]of e){if(e.size<t)return;n(i)&&e.delete(r)}}export{e as t};

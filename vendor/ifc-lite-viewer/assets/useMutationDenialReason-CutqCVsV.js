@@ -1,0 +1,1 @@
+import{n as e}from"./store-CY9b5xES.js";import{l as t,u as n}from"./mutation-permission-Clg2lJID.js";function r(r){return e(e=>{let i=typeof r==`string`||r===void 0?t(e,r):n(e,r);return i.allowed?null:i.reason})}export{r as t};

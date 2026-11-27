@@ -1,0 +1,1 @@
+import{r as e}from"./model-slot-ref-D-TO0hE7.js";function t(t,n){if(t.collabRoomId===null)return;let r=t.collabRoomModels.get(n);if(r&&r.pathPrefix!==``&&n===e(t.collabRoomId,r.slotId))return r.pathPrefix}export{t};

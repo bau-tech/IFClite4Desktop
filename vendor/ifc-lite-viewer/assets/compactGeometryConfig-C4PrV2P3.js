@@ -1,0 +1,1 @@
+import{jo as e}from"./exporters-CJc_vDSO.js";import{r as t}from"./src-BDMmz2Zk.js";async function n(){return await Promise.all([e(),t()]),32}export{n as enableCompactGeometry};

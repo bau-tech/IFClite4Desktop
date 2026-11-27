@@ -1,0 +1,1 @@
+import{t as e}from"./react-C30gA_Uc.js";var t=e(()=>({finding:null}));export{t};

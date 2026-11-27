@@ -1,0 +1,16 @@
+import{Ou as e}from"./sandbox-DFPbTbin.js";import{f as t,p as n}from"./src-BQ-W2e6C.js";var r=`https://example.org/ifc-lite/pilot/`,i=[r+`revision/1`,r+`revision/2`];function a(t){let n=0,r=new e({Name:`Linked records pilot`,Timestamp:0,GuidSource:()=>(++n).toString(16).padStart(22,`0`)}),i=r.addIfcBuildingStorey({Name:`Ground`,Elevation:0}),a=[0,1,2].map(e=>r.addIfcDoor(i,{Name:`Pilot door ${e+1}`,Position:[e*2,t*3,0],Width:.9,Height:2.1})),{content:o}=r.toIfc();return{content:o,GlobalIds:a.map(e=>{let t=o.match(RegExp(`#${e}=IFCDOOR\\('([^']+)'`));if(!t)throw Error(`Pilot creator did not emit a door GlobalId`);return t[1]}),doors:a}}function o(){let{GlobalIds:e}=a(0),n=e=>r+e;return{profile:t,source:n(`original-demo`),completeness:`complete`,resources:[{id:n(`building`),type:`Building`,label:`Pilot building`},{id:n(`logbook`),type:`Logbook`,label:`Building logbook`,buildingId:n(`building`)},{id:n(`batch`),type:`Product`,label:`Shared door batch`,granularity:`batch`,passportId:n(`batch-passport`),fireRating:`EI30`,dictionaryUri:n(`concept/fire-door`)},{id:n(`item`),type:`Product`,label:`Individual door`,granularity:`item`,passportId:n(`item-passport`),fireRating:`EI60`,dictionaryUri:n(`concept/fire-door`)},{id:n(`batch-passport`),type:`Passport`,label:`Batch passport`,productId:n(`batch`),granularity:`batch`},{id:n(`item-passport`),type:`Passport`,label:`Item passport`,productId:n(`item`),granularity:`item`},...e.map((e,t)=>({id:n(`installation/${t+1}`),type:`Installation`,label:`Installed door ${t+1}`,buildingId:n(`building`),productId:n(t===2?`item`:`batch`),GlobalId:e,modelRevision:i[0],...t===0?{replacesId:n(`previous`)}:{}})),{id:n(`previous`),type:`Installation`,label:`Previous revision door`,buildingId:n(`building`),productId:n(`batch`),GlobalId:e[0],modelRevision:i[1]},{id:n(`unmatched`),type:`Installation`,label:`Not in either model`,buildingId:n(`building`),productId:n(`batch`),GlobalId:`0000000000000000000999`},{id:n(`inspection`),type:`Inspection`,label:`Inspection evidence`,installationId:n(`installation/1`),evidenceId:n(`inspection.pdf`)},{id:n(`incomplete-passport`),type:`Passport`,label:`Incomplete passport: missing product and granularity`}]}}var s=`PREFIX pilot: <${n}>
+SELECT ?id ?type ?label ?GlobalId ?modelRevision ?buildingId ?productId ?passportId ?granularity ?fireRating ?installationId ?replacesId ?evidenceId ?dictionaryUri
+WHERE {
+  ?id a ?type ; pilot:label ?label .
+  OPTIONAL { ?id pilot:GlobalId ?GlobalId }
+  OPTIONAL { ?id pilot:modelRevision ?modelRevision }
+  OPTIONAL { ?id pilot:buildingId ?buildingId }
+  OPTIONAL { ?id pilot:productId ?productId }
+  OPTIONAL { ?id pilot:passportId ?passportId }
+  OPTIONAL { ?id pilot:granularity ?granularity }
+  OPTIONAL { ?id pilot:fireRating ?fireRating }
+  OPTIONAL { ?id pilot:installationId ?installationId }
+  OPTIONAL { ?id pilot:replacesId ?replacesId }
+  OPTIONAL { ?id pilot:evidenceId ?evidenceId }
+  OPTIONAL { ?id pilot:dictionaryUri ?dictionaryUri }
+} LIMIT 5000`;export{a,o as i,i as n,s as r,r as t};

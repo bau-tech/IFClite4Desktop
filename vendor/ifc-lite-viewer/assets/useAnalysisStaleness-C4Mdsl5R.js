@@ -1,0 +1,1 @@
+export{t as analysisStampFrom,n as analysisStampOf,r as captureAnalysisStamp,i as isAnalysisStale,a as stampAnalysisReport,o as useAnalysisStaleness}from"./useAnalysisStaleness-BOjxHprJ.js";

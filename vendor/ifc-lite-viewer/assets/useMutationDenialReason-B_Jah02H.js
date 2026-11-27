@@ -1,1 +1,0 @@
-import{n as e}from"./store-CnnNEa_a.js";import{l as t,u as n}from"./mutation-permission-DMwt3kXe.js";function r(r){return e(e=>{let i=typeof r==`string`||r===void 0?t(e,r):n(e,r);return i.allowed?null:i.reason})}export{r as t};

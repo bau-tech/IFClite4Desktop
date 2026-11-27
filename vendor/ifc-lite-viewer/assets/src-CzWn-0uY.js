@@ -1,0 +1,1 @@
+import"./exporters-CJc_vDSO.js";export{t as parseFederatedIfcx,n as parseIfcx}from"./ifcx-parser-CVZ9Tlqe.js";

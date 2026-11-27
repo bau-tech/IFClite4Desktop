@@ -1,1 +1,0 @@
-import{k as e}from"./exporters-Dg8RURu9.js";import{t}from"./energy-export-source-C9NWRThN.js";function n(n,r){let i=t({mutationView:r,dataStore:n,schemaVersion:n.schemaVersion});return i?new e(i.dataStore,i.mutationView).export({schema:i.dataStore.schemaVersion,applyMutations:!0,includeGeometry:!0,includeQuantities:!0}).content:n.source.materialize()}export{n as t};

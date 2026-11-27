@@ -1,0 +1,1 @@
+import{n as e}from"./store-CY9b5xES.js";function t(){let t=e.getState(),n=[];for(let[e,r]of t.models)if(r.ifcDataStore===t.ifcDataStore)for(let r of t.undoStacks.get(e)??[])r.attributeName?.startsWith(`georef.`)||n.push(r);return n}export{t};

@@ -1,0 +1,1 @@
+import{d as e}from"./result-limit-ciUooLEO.js";function t(t){return e({entries:t.entries,activeId:t.activeId})}export{t};

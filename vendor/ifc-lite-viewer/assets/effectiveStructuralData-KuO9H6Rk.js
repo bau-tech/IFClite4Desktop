@@ -1,0 +1,1 @@
+import{gr as e,qn as t}from"./exporters-CJc_vDSO.js";var n=new WeakMap;function r(r,i){let a=i?.getMutationRevision(),o=n.get(r);if(o&&o.view===i&&o.revision===a&&o.source===r.source)return o.data;let s=e(r,i?t(r,i):void 0);return n.set(r,{view:i,revision:a,source:r.source,data:s}),s}export{r as t};

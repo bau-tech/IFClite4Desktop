@@ -1,0 +1,1 @@
+export{t as fromGlobalIdFromModels,n as localIdInOverlay,r as localIdInParseRange,i as toGlobalIdForRef,a as toGlobalIdFromModels,o as typeNameOfGlobalId}from"./globalId-Cfhv8uHj.js";

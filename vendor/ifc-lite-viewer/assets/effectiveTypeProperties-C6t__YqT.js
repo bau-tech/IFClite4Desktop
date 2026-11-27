@@ -1,0 +1,1 @@
+export{t as effectiveTypeProperties}from"./effectiveTypeProperties-CE_VrihA.js";

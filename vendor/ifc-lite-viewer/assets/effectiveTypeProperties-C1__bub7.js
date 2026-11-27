@@ -1,1 +1,0 @@
-export{t as effectiveTypeProperties}from"./effectiveTypeProperties-D8FgAzZ7.js";

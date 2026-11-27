@@ -1,0 +1,1 @@
+import{r as e}from"./selection-grounding-BOR-FPBs.js";import{r as t}from"./room-review-DfLYwO-L.js";var n={selection:null,screenshot:null};function r(n){return{...n.selection?{selection:e(n.selection),selectionSnapshot:n.selection}:{},...n.screenshot?{screenshot:n.screenshot}:{},...n.rooms?{rooms:t(n.rooms),roomSnapshot:n.rooms}:{}}}export{r as n,n as t};

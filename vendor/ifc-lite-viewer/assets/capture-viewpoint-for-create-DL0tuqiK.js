@@ -1,1 +1,0 @@
-import{o as e}from"./toast-B-VKel53.js";async function t(t,n,r,i){let a;try{let e=await t();if(e)return{ok:!0,viewpoint:e};a=`the capture produced no viewpoint`}catch(e){a=e}return console.error(`[${i}] failed to capture viewpoint for new topic`,a),n()&&e.error(r),{ok:!1}}export{t};

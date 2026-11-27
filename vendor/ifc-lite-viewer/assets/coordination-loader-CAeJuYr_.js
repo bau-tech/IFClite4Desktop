@@ -1,0 +1,1 @@
+export{m as attachCoordinationComposition,h as attachCoordinationModelAdder,g as coordinationComposition,_ as coordinationModelAdder}from"./drawing-shared-Dq_4ezmH.js";

@@ -1,0 +1,1 @@
+var e=null,t=null;function n(t){return e=t,()=>{e===t&&(e=null)}}function r(e){return t=e,()=>{t===e&&(t=null)}}function i(){if(!e)throw Error(`The viewer extension host is not mounted.`);return e}function a(){if(!t)throw Error(`The viewer source host is not mounted.`);return t}export{a as i,r as n,i as r,n as t};

@@ -1,0 +1,1 @@
+export{t as createSelectionAdapter}from"./selection-adapter-C1MKMZvE.js";

@@ -1,0 +1,1 @@
+import{bu as e}from"./exporters-CJc_vDSO.js";function t(t,n){return t instanceof ArrayBuffer?t:e(n,new Uint8Array(t).slice().buffer)}var n=4096,r=67324752;function i(e){return e.byteLength>=4&&new DataView(e).getUint32(0,!0)===r}var a={originalResources:new Map,resourcesIncomplete:!1};export{t as i,a as n,i as r,n as t};

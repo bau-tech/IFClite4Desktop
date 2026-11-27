@@ -1,1 +1,0 @@
-import{o as e}from"./activity-journal-CQflAdG-.js";import{a as t}from"./download-CeoHegq-.js";function n(n,r,i){return e({kind:`export`,title:`activityTray.job.bcfArchive`,panel:`bcf`,subject:n},async()=>{let e=await i();t(e,r)})}export{n as t};

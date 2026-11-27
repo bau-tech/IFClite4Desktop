@@ -1,1 +1,0 @@
-export{t as captureTranslation,n as englishMessage,r as getLocale,i as getLocaleSnapshot,a as hasActiveTranslation,o as registerEnglish,s as registerLocale,c as resolve,l as resolveEnglish,u as selectPluralCategory,d as setLocale,f as subscribeLocale}from"./registry-DMAU8xoF.js";

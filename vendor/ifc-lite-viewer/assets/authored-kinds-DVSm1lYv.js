@@ -1,1 +1,0 @@
-export{t as AUTHORED_KINDS}from"./authored-kinds-B_pw9ElS.js";

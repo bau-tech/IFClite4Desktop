@@ -1,0 +1,1 @@
+import{o as e}from"./activity-journal-p2DZKfmq.js";import{o as t}from"./download-DPEMmtct.js";function n(n,r,i){return e({kind:`export`,title:`activityTray.job.bcfArchive`,panel:`bcf`,subject:n},async()=>{let e=await i();t(e,r)})}export{n as t};

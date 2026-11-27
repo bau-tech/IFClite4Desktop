@@ -1,0 +1,1 @@
+import{wr as e}from"./drawing-2d-7U7UObnj.js";function t(e){return[...e].filter(e=>!e.gaussianSplat&&!(e.geometryResult?.pointClouds?.length&&e.geometryResult.meshes.length===0))}function n(n,r){return e(t(n),r)}export{n,t};

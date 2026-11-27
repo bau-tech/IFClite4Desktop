@@ -1,0 +1,1 @@
+import{n as e,r as t}from"./browser-CFo3uAkZ.js";var n=()=>new t({code:e.CANCELLED,message:`Tool cancelled.`});function r(e){if(e?.aborted)throw n()}function i(e){r(e.signal),e.checkpoint?.()}export{i as n,n as r,r as t};

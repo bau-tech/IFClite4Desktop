@@ -1,1 +1,0 @@
-import{Bt as e,Ht as t,Ut as n,Wt as r,cn as i,zt as a}from"./src-BwU1X6NZ.js";import{t as o}from"./session-BTTEXgqy.js";var s={createStudioState:t,dispatchStudioOps:o,canUndo:e,canRedo:a,undo:r,redo:n,locateNode:i};export{s as idsStudioRuntime};

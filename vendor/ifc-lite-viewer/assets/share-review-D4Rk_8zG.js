@@ -1,0 +1,1 @@
+import{t as e}from"./react-C30gA_Uc.js";var t=e(()=>({candidate:null,dialogOpen:!1}));export{t};

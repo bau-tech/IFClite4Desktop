@@ -1,0 +1,1 @@
+export{t as EventStreamSerde,r as eventStreamSerdeProvider}from"./index.browser-BG69sWm8.js";import"./dist-es-BLMRerxR.js";

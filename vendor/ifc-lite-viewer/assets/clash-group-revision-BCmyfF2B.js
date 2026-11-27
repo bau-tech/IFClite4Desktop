@@ -1,1 +1,0 @@
-import{r as e}from"./state-revision-HyX8cJSG.js";function t(t){return e({entries:t.entries,activeId:t.activeId})}export{t};

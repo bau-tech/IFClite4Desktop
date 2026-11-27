@@ -1,0 +1,1 @@
+import{as as e,ns as t,os as n}from"./store-CY9b5xES.js";import{i as r,n as i,r as a,t as o}from"./useBCF-COaoxjep.js";export{o as clearGlobalRefs,i as getGlobalCanvas,t as getGlobalRenderer,a as setGlobalCanvasRef,e as setGlobalRendererRef,n as subscribeGlobalRenderer,r as useBCF};

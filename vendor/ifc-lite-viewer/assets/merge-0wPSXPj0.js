@@ -1,0 +1,1 @@
+export{t as candidateLabel,n as editedWithRemovals,r as ensureCandidateOnRegistry,i as executeMergeInto,a as previewMergeInto,o as refStackFiles,s as requiredCheckStatus}from"./merge-Bf3o_61q.js";

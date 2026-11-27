@@ -1,0 +1,1 @@
+function e(e,t,n){let r=t(Math.abs(e));return Number.isNaN(e)||r===t(0)?r:e<0?`-${r}`:n?`+${r}`:r}export{e as t};

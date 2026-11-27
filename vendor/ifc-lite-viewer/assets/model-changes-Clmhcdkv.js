@@ -1,0 +1,1 @@
+export{t as LEGACY_MODEL_ID,n as buildChangedArtifacts,r as collectChangedModels,i as totalChangeCount}from"./model-changes-D5oaccC-.js";

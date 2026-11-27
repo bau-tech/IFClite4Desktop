@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-BCiCTKAo.js";import{o as t}from"./grid-layout-BPAXLiFy.js";import{c as n,f as r,i,r as a}from"./registry-CG8XQQr9.js";var o=e(t(),1);function s(){let e=(0,o.useSyncExternalStore)(r,i,i);return{t:n,locale:a(),revision:e}}export{s as t};

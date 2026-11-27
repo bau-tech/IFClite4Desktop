@@ -1,0 +1,1 @@
+import{t as e}from"./react-C30gA_Uc.js";var t=e()(()=>({choice:null,pendingIdsFile:null}));function n(e){t.setState({choice:e})}function r(e){t.setState({choice:`ids`,pendingIdsFile:e})}function i(){let e=t.getState().pendingIdsFile;return e&&t.setState({pendingIdsFile:null}),e}export{t as i,n,i as r,r as t};

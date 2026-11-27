@@ -1,0 +1,1 @@
+import{t as e}from"./react-C30gA_Uc.js";var t=e(()=>({candidate:null})),n=new Set;function r(e,t){let r=`${t}:${e.id}`;return!n.has(r)&&(n.add(r),!0)}export{t as n,r as t};

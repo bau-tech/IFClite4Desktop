@@ -1,1 +1,0 @@
-export{t as GeorefReadOnlyNotices,n as WellKnownTextRow,r as isReadOnlyCoordinateOperation}from"./georef-notices-DWfdu9aK.js";

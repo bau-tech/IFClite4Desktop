@@ -1,0 +1,1 @@
+export{t as NO_NATIVE_RENDERER,n as captureNativeViewport}from"./native-viewport-frame-DCbTBF8U.js";

@@ -1,0 +1,1 @@
+import{_ as e,g as t,p as n,u as r}from"./source-filter-n7khlai6.js";import{F as i,H as a}from"./persistence-_t-Jz45s.js";function o(o,s,c,l){switch(o){case`elements`:return e(c,l,s);case`clash`:return i(s);case`bcf`:return t(s);case`schedule`:return n(s);case`ids`:return r(s);case`compare`:return a(s)}}export{o as t};

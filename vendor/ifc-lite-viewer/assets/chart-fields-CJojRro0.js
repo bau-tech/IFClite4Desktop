@@ -1,0 +1,1 @@
+import{h as e}from"./dist-fC88IcbD.js";function t(t){let n=t.filter(e=>e.source===`elements`).flatMap(e=>[e.elementField,e.measureField].filter(e=>e!==void 0));return[...new Map(n.map(t=>[e(t),t])).values()]}export{t};

@@ -1,0 +1,1 @@
+import{E as e,F as t,I as n,P as r,d as i,l as a}from"./persistence-CLNXyp2H.js";function o(e,t){return{schemaVersion:1,settings:{...t},presets:i(e)}}function s(i){if(!i||typeof i!=`object`)return null;let o=i,s=(Array.isArray(o.presets)?o.presets:[]).filter(r).map(t=>n(t,e().has(t.id)));return{presets:a(s),settings:t(o.settings)}}export{o as n,s as t};

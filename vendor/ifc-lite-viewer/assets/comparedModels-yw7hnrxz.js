@@ -1,0 +1,1 @@
+function e(e,t){if(!t||t.size===0)return e;let n=new Map(e);for(let[r,i]of t){let t=e.get(r);t&&n.set(r,{...t,ifcDataStore:i})}return n}export{e as t};

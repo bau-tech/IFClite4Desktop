@@ -1,0 +1,1 @@
+export{t as canMutate,n as canMutateData,r as dataMutationPermission,i as dataMutationPermissionForModels,a as isMutationDenialReason,o as mutationDenial,s as mutationDenialKey,c as mutationDenialMessage,l as mutationPermission,u as mutationPermissionForModels}from"./mutation-permission-Clg2lJID.js";

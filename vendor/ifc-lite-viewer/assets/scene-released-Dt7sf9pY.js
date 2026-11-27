@@ -1,0 +1,1 @@
+function e(e){if(typeof e.getScene!=`function`)return!1;let t=e.getScene();return t?`isGeometryDataReleased`in t&&typeof t.isGeometryDataReleased==`function`&&t.isGeometryDataReleased()===!0:!1}export{e as t};

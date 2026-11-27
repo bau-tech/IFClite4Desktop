@@ -1,0 +1,1 @@
+function e(e){return e.includes(`2X3`)?`IFC2X3`:e.includes(`4X3`)?`IFC4X3`:`IFC4`}function t(e,t,n){if(!n.has(`${e}.${t}`))return n.add(`${e}.${t}`),e;let r=2;for(;n.has(`${e}-${r}.${t}`);)r++;return n.add(`${e}-${r}.${t}`),`${e}-${r}`}export{t as n,e as t};

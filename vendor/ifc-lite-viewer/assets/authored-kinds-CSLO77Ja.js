@@ -1,0 +1,1 @@
+export{t as AUTHORED_KINDS}from"./authored-kinds-DV7iNFlw.js";

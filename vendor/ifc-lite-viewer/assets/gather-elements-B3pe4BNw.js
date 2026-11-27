@@ -1,0 +1,1 @@
+export{t as gatherClashElements}from"./gather-elements-Bt0BOx-D.js";

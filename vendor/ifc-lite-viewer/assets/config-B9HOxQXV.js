@@ -1,0 +1,1 @@
+export{t as collabServerUrl,n as isCollabEnabled,r as setCollabEnabledOverride}from"./config-DmapaJ5L.js";

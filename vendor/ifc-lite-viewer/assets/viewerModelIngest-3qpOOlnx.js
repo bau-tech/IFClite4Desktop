@@ -1,0 +1,1 @@
+export{c as parseIfcxViewerModel}from"./viewerModelIngest-CaDdPy1J.js";

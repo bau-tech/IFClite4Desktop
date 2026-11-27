@@ -1,0 +1,1 @@
+import{W as e,qt as t}from"./src-CSFfPG91.js";import{t as n}from"./runtime-loader-Cfx8xZN7.js";var r=null;function i(){r??=(async()=>{let n=await t();return{gate:n,lint:await e({gate:n})}})();let i=r;return i.catch(e=>{console.warn(`[ids-studio] schema tables failed to load`,e),r===i&&(r=null)}),Promise.all([i,n()]).then(([e])=>e)}export{i as t};

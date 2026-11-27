@@ -1,0 +1,1 @@
+import{t as e}from"./store-CY9b5xES.js";async function t(t){let n=e().getState();if(t===`__legacy__`)return n.ifcDataStore;let r=n.models.get(t);return r?r.ifcDataStore:null}export{t};
